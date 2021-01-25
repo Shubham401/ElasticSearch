@@ -1,0 +1,19 @@
+{
+  "name": "elastic-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js | pino-socket -a 127.0.0.1 -p 5001 -m tcp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^16.7.2",
+    "get-json": "^1.0.1",
+    "pino": "^6.8.0",
+    "pino-socket": "^3.0.0"
+  }
+}
